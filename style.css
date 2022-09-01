@@ -1,0 +1,196 @@
+body {
+  background-color: #f6fbf4;
+  margin: 0;
+}
+/* 
+Header================================================================
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#navbar li {
+  display: inline;
+  margin: 10px;
+}
+#company_logo {
+  width: 100px;
+  height: 50px;
+}
+
+#actions li {
+  display: inline;
+  margin: 10px;
+}
+
+#actions li img {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+li img:hover {
+  height: 15px;
+  width: 25px;
+}
+/* 
+Main ==================================================================
+*/
+
+#imgAndTitle{
+  height: 30vw;
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+  position: relative;
+}
+#imgMain {
+  float: right;
+  max-width: 75%;
+  height: auto;
+  display: absolute;
+  transition:800ms;
+  animation-name: imgMain;
+  animation-duration: 800ms;
+}
+#divTitle {
+  font-size: 3.5vw;
+  position: relative;
+  left: 4%;
+  transition:800ms;
+  animation-name: title;
+  animation-duration: 800ms;
+}
+@keyframes imgMain{
+  0%{
+    opacity: 0.2;
+    transform: translateX(150px);
+  }
+  25%{
+    opacity: 0.4;
+    transform: translateX(100px);
+  }
+  50%{
+    opacity: 0.6;
+    transform: translateX(50px);
+  }
+  75%{
+    opacity: 0.8;
+    transform: translateX(10px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes title{
+  0%{
+    opacity: 0.2;
+    transform: translateX(-150px);
+  }
+  25%{
+    opacity: 0.4;
+    transform: translateX(-100px);
+  }
+  50%{
+    opacity: 0.6;
+    transform: translateX(-50px);
+  }
+  75%{
+    opacity: 0.8;
+    transform: translateX(-10px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.circleImg {
+  width: 6vw;
+  height: 10vh;
+  border-radius: 50%;
+  transition:800ms;
+  animation-name: circleImg;
+  animation-duration: 800ms;
+}
+@keyframes circleImg{
+  0%{
+    opacity: 0.2;
+    transform: translateX(-150px);
+  }
+  25%{
+    opacity: 0.4;
+    transform: translateX(-100px);
+  }
+  50%{
+    opacity: 0.6;
+    transform: translateX(-50px);
+  }
+  75%{
+    opacity: 0.8;
+    transform: translateX(-10px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+#scrollToSeeMore{
+
+  margin-left: 15px;
+  border: solid 5px #025ea8;
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 65% 45%;
+
+}
+p{
+  color: black;
+  
+}
+.imgInText{
+  width: 35px;
+  height: 35px;
+}
+.textMiddle{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  
+}
+#textMain::after{
+  content: 'y';
+  color: white;
+}
+#productLink{
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  font-family: cursive
+}
+#productLinkTag{
+  text-decoration: none;
+  color: orange;
+}
+
+/* Live chat*/
+#liveChat{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  background-color: 25px;
+  width: 80px;
+  height: 80px;
+  width: fit-content;
+  height: fit-content;
+}
+#liveChat::after{
+  content: '1';
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius:50% ;
+  position:relative;
+  right: 15px;
+  padding: 10px;
+  color: white;
+}
